@@ -14,6 +14,8 @@ const boxContainer = document.querySelector('.box-container')
 const iconPath = document.querySelector('#icon')
 const hiddenBox = document.querySelector('.hidden-box')
 const textBox = document.querySelector('.hidden-box .text-box')
+const happyFaceSVG = document.querySelector('#happy-face-svg')
+const happyFacePath = document.querySelector('#happy-face-path')
 
 const colorPalettes = [
     [
@@ -171,6 +173,8 @@ let paletteIndex = 0
 const xLetterIndex = 11
 const socialFanIndex = 1
 const rotateIconIndex = 3
+const happyFaceIndex = 9
+
 // Start State
 xLetterSVG.style.fill = colorPalettes[paletteIndex][xLetterIndex].fill
 allPills.forEach((pill, index) =>
@@ -218,6 +222,10 @@ const addTheme = (
     iconPath.style.stroke = lineColor || colorPalettes[paletteIndex][rotateIconIndex].altStroke
     iconPath.style.strokeWidth = strokeWidth
 
+    happyFacePath.style.strokeWidth = strokeWidth
+    happyFacePath.style.stroke = lineColor || colorPalettes[paletteIndex][happyFaceIndex].altStroke
+    happyFaceSVG.style.fill = svgFill || colorPalettes[paletteIndex][happyFaceIndex].fill
+
     allBoxes.forEach((box, index) =>
         box.style.backgroundColor = boxBackgroundColor || colorPalettes[paletteIndex][index].fill
     )
@@ -234,6 +242,7 @@ const addTheme = (
     allHiddenPills.forEach((hiddenPill => {
         hiddenPill.style.opacity = opacity
         hiddenPill.style.borderWidth = strokeWidth
+        hiddenPill.style.backgroundColor = pillBackgroundColor || colorPalettes[paletteIndex][socialFanIndex].fill
         hiddenPill.style.borderColor = lineColor || colorPalettes[paletteIndex][socialFanIndex].altStroke
         hiddenPill.style.borderRadius = borderRadius
     }))
@@ -266,5 +275,17 @@ const moveSlider = () => {
         addTheme('rgb(38, 38, 38)', '12px', 'white', 1, 'black', 0, 'transparent', 'white')
     }
 }
-
 sliderInput.addEventListener('input', moveSlider)
+
+const changePalette = () => {
+    xLetterPath.classList.add('pulse')
+    if (paletteIndex >= 2) {
+        paletteIndex = 0
+    } else {
+        paletteIndex++
+    }
+    moveSlider()
+    setTimeout(() => xLetterPath.classList.remove('pulse'), 500)
+}
+
+xBox.addEventListener('click', changePalette)

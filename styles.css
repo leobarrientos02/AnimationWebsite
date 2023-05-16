@@ -63,6 +63,7 @@ a {
   display: flex;
   justify-content: center; /* left to right */
   align-items: center; /* top to bottom */
+  font-size: 2rem;
 }
 
 .slider-container {
@@ -110,6 +111,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 .x-box svg {
@@ -209,6 +211,7 @@ a {
   box-sizing: border-box;
   border-radius: 100px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .social-fan {
@@ -305,12 +308,12 @@ a {
 }
 
 .large-box:hover .text-box p {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 .large-box:hover .text-box a {
-  font-size: 18px;
-  color: rgb(196, 104, 0);
+  font-size: 1.5rem;
+  color: rgb(196, 0, 0);
 }
 
 .small-box.stretchable:hover .hidden {
@@ -332,4 +335,41 @@ a {
 
 .hidden-box .text-box {
   margin: 30px;
+}
+
+.pulse {
+  transform-origin: center;
+  animation: pulse 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hidden-box a,
+.hidden-box p {
+  font-size: 2rem;
+}
+
+iframe {
+  width: 100%;
+  min-height: 300px;
+}
+
+#happy-face-svg {
+  transform: scale(0.9);
+  transform: rotate(-180deg);
+}
+
+#happy-face-svg:hover {
+  transform: rotate(0);
 }
