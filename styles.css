@@ -308,11 +308,11 @@ a {
 }
 
 .large-box:hover .text-box p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .large-box:hover .text-box a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(196, 0, 0);
 }
 
