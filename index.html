@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Css Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="hidden-box">
+        <div class="text-box hidden">
+            <h2>Want to see how this site was made?</h2>
+            <p>Follow along with this turtorial from Anai Kubow.</p>
+            <p>
+                Anai is a Software Developer rasied in the UAE.
+                She frequentyle puts outs tutorials on her <a href="">Youtube Channel</a>.
+            </p>
+            <iframe src=""></iframe>
+            <p>Click <a href="">here</a> to view more.</p>
+        </div>
+    </div>
+
+    <div class="box-container">
+
+        <div class="small-box box" id="expand">
+            <div class="pill">
+                <div class="arrow left-expand-arrow">
+                </div>
+            </div>
+        </div>
+
+        <div class="long-box box social-fan">
+            <div class="pill"></div>
+            <div class="hidden-pill social instagram hidden">
+                <a href="">INSTAGRAM</a>
+            </div>
+            <div class="hidden-pill social email hidden">
+                <a href="mailto:leonele.barrientos02@gmail.com">EMAIL</a>
+            </div>
+            <div class="hidden-pill social coding-tips hidden">
+                <a href="https://www.youtube.com/results?search_query=Coding+tips">CODING TIPS</a>
+            </div>
+        </div>
+
+        <div class="long-box box-info">
+            <div class="pill">
+            </div>
+        </div>
+
+        <div class="small-box box" id="reverse">
+            <div class="pill">
+                <svg class="rotating-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 128 141" fill="none">
+                    <path id="icon" d="M64 124C97.1371 124 124 97.1371 124 64C124 30.8629 97.1371 4 64 4C30.8629 4 4 30.8629 4 64M64 124V105M64 124V141" stroke="rgb(38, 38, 38)" stroke-width="8"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="long-box box">
+            <div class="pill">
+                <a href="https://www.saaa.am/">INSPIRED BY SAAM.AKM</a>
+            </div>
+        </div>
+
+        <div class="small-box box stretchable">
+            <div class="pill">
+                <a href="" class="hidden">NEWSLETTER</a>
+            </div>
+        </div>
+
+        <div class="small-box box stretchable">
+            <div class="pill">
+                <p class="hidden">:)</p>
+            </div>
+        </div>
+
+        <div class="large-box box" id="takeover">
+            <div class="pill">
+                <div class="logo-container">
+                    <img src="" alt="LOGO" />
+                    <div class="arrow-container">
+                        <div class="arrow right-expand-arrow"></div>
+                    </div>
+                </div>
+
+                <div class="text-box hidden">
+                    <h1>CodersDSXB</h1>
+                    <p>We are an inclusive community supporting all things tech and innovation in the world.</p>
+                    <p>Our mission is to update you on events going on, cool events to work remotely as well as the latest news on technology and innovation.</p>
+                    <p>Make sure to <a href="">sign up to our newsletter</a> to stay updated.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="x-box">
+            <p>CLICK</p>
+            <svg id="x-letter-svg" xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" viewBox="0 0 138 138" fill="none">
+                <path id="x-letter" d="M73.2426 29.402L100.113 2.53196C102.456 0.188816 106.255 0.188816 108.598 2.53196L135.468 29.402C137.811 31.7452 137.811 35.5442 135.468 37.8873L108.598 64.7574C106.255 67.1005 106.255 70.8995 108.598 73.2426L135.468 100.113C137.811 102.456 137.811 106.255 135.468 108.598L108.598 135.468C106.255 137.811 102.456 137.811 100.113 135.468L73.2426 108.598C70.8995 106.255 67.1005 106.255 64.7574 108.598L37.8873 135.468C35.5442 137.811 31.7452 137.811 29.402 135.468L2.53196 108.598C0.188817 106.255 0.18882 102.456 2.53196 100.113L29.402 73.2426C31.7452 70.8995 31.7452 67.1005 29.402 64.7574L2.53196 37.8873C0.188818 35.5442 0.18882 31.7452 2.53196 29.402L29.402 2.53196C31.7452 0.188816 35.5442 0.188817 37.8873 2.53196L64.7574 29.402C67.1005 31.7452 70.8995 31.7452 73.2426 29.402Z" stroke="rgb(38, 38, 38)" stroke-width="2"/>
+            </svg>
+        </div>
+
+        <div class="large-box box" id="squish">
+            <div class="pill">
+                <div class="text-box hidden">
+                    <p>Have a cool tech event you want us to promote? Contact us <a href="mailto:leonele.barrientos02@gmail.com">here</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-container box">
+            <div class="pill">
+                <div class="input-container">
+                    <input type="range" id="slider-input" min="0" max="10" value="0" step="1" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
