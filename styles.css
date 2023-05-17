@@ -66,6 +66,22 @@ a {
   font-size: 2rem;
 }
 
+.shuffle-pill {
+  position: relative;
+}
+
+.shuffle-pill p {
+  position: absolute;
+  top: 30%;
+  display: none;
+  z-index: 10;
+  font-weight: 400;
+}
+
+.shuffle-pill:hover p {
+  display: block;
+}
+
 .slider-container {
   position: relative; /*parent element of input-container */
   min-height: 500px;
