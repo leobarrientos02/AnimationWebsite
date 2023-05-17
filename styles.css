@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
   color: rgb(38, 38, 38);
   font-weight: 200;
+  font-size: 1.5rem;
 }
 
 body {
@@ -397,6 +398,10 @@ iframe {
   margin: 10px;
 }
 
-.flipArrow {
-  transform: rotate(-180deg);
+.hidden-box .text-box {
+  margin: 30px;
+}
+
+.hidden-box ~ .box-container {
+  overflow: hidden;
 }
