@@ -16,6 +16,7 @@ const hiddenBox = document.querySelector('.hidden-box')
 const textBox = document.querySelector('.hidden-box .text-box')
 const happyFaceSVG = document.querySelector('#happy-face-svg')
 const happyFacePath = document.querySelector('#happy-face-path')
+const leftExpandArrow = document.querySelector('.left-expand-arrow')
 
 const colorPalettes = [
     [
@@ -187,9 +188,11 @@ allHiddenPills.forEach((hiddenPill, index) =>
 const expand = () => {
     if (hiddenBox.clientWidth !== 0) {
         textBox.classList.add('hidden')
+        setTimeout(() => leftExpandArrow.style.borderWidth = '0 12px 12px 0', 100)
         setTimeout(() => hiddenBox.style.width = '0px', 200)
     } else {
         hiddenBox.style.width = '1700px'
+        setTimeout(() => leftExpandArrow.style.borderWidth = '12px 0 0 12px', 100)
         setTimeout(() => textBox.classList.remove('hidden'), 500)
     }
 }

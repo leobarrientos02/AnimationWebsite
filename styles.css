@@ -373,3 +373,14 @@ iframe {
 #happy-face-svg:hover {
   transform: rotate(0);
 }
+
+.daily-dev {
+  padding: 15px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 7px;
+  margin: 10px;
+}
+
+.flipArrow {
+  transform: rotate(-180deg);
+}
